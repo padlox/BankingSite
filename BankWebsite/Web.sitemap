@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/start.aspx" title="Home"  description="Alliance Bank Home Page">
+    <siteMapNode url="~/About.aspx" title="About"  description="About Alliance Bank" />
+    <siteMapNode url="~/Locations.aspx" title="Locations"  description="Alliance Bank Locations" />
+    <siteMapNode url="~/Contact.aspx" title="Contact" description="Contact Alliance Bank" />
+    <siteMapNode url="~/Personal.aspx" title="Personal Banking" description="Personal Banking"></siteMapNode>  
+    <siteMapNode url="~/Business.aspx" title="Business Banking" description="Business Banking"></siteMapNode>
+    <siteMapNode url="~/InterestRates.aspx" title="Interest Rates" description="Interest Rates"></siteMapNode>
+  </siteMapNode>
+</siteMap>

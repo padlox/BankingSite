@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="BankWebsite._default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <asp:Image ID="logo" ImageUrl="~/img/logoAllianceBank.png" AlternateText="Alliance Bank" runat="server" />
+        <h1>Working together for you</h1>
+    </header>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Menu ID="MainMenu" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server"/>
+        </div>
+        <div>
+            <asp:ImageButton ID="imgLoanSale" ImageUrl="~/img/LoanSale.png" AlternateText="Loan Sale" runat="server" OnClick="imgLoanSale_Click"/>
+            <p><%= Application["imgLoanSaleClick"] %> people have already found theirs!</p>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+        <br />
+        <small>
+            Copyright &copy; 2018    <asp:Image ID="FDIC" ImageUrl="~/img/fdic.gif" AlternateText="FDIC" runat="server" />
+            <asp:Image ID="EqualHousing" ImageUrl="~/img/equal_housing.gif" AlternateText="Equal Housing Lender" runat="server" />
+        </small>
+    </footer>
+</body>
+</html>

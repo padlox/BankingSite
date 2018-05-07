@@ -1,0 +1,7 @@
+﻿body, a:link {
+    background-color: beige;
+    color: maroon;
+}
+a:visited, a:hover {
+    color: darkred;
+}
